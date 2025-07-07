@@ -155,7 +155,7 @@ const forgotPassword = async (req, res, next) => {
 
     await user.save();
 
-    const resetPasswordURL = `${process.env.FRONTEND_URL}/reset-password/${resetToken}`;
+    const resetPasswordURL = `${"https://lmsfrontend123.netlify.app"}/reset-password/${resetToken}`;
 
     console.log(resetPasswordURL);
 
